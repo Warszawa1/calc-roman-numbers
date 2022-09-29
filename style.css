@@ -1,0 +1,122 @@
+*{
+    text-align:center;
+    margin-top: 2px;
+}
+
+#display {
+	width: 70%;
+	height: 35px;
+	text-align: right;
+	font-size: 1.8rem;
+    border: 0;
+    box-shadow: 0 1px #151616;
+    border-radius: 6px;
+    letter-spacing: .15em; 
+}
+
+* {
+    box-sizing: border-box; 
+  }
+  
+  body {
+    padding: 10em;
+    width: 90%;
+    background: white;
+  }
+  
+  fieldset {
+    border: 4px double rgb(223, 219, 33);
+    border-radius: 8px;
+    padding: 1.2em;
+    background-color: #C0C0C0;
+  }  
+  
+  h1 {
+    color: black;
+    text-align: center;
+  }
+  
+  h2, p {
+    color: black;
+    text-align: center;
+  }
+  
+  
+.digit {
+    display: inline-block;
+    width: 22%;
+    text-align: center;
+    font-weight: bold;
+    background: white;
+    color: black;
+    text-transform: uppercase;
+    padding: .75em;
+    border: 0;
+    box-shadow: 0 3px #151616;
+    border-radius: 6px;
+    letter-spacing: .15em;
+    position: relative;
+    margin-bottom: .65em;
+    margin-top: .3em;
+    margin-left: .3em;
+    margin-right: .3em; 
+}
+
+.oper {
+    display: inline-block;
+    width: 22%;
+    text-align: center;
+    font-weight: bold;
+    background: #3498DB;
+    color: black; 
+    text-transform: uppercase;
+    padding: .75em;
+    border: 0;
+    box-shadow: 0 3px #151616;
+    border-radius: 6px;
+    letter-spacing: .15em;
+    position: relative;
+    margin-bottom: .65em; 
+    margin-top: .3em;
+    margin-left: .3em;
+    margin-right: .3em; 
+  }
+
+#clearMem{
+   width: 22%;
+   height: 35px;
+   background: #E74C3C; 
+   box-shadow: 0 3px #181717;
+   text-align: center;
+   float: right;
+   position: relative;
+   margin-right: 16px;
+   margin-top: 2px;
+  }
+  
+  
+.digit:active {
+    top: 4px;
+    box-shadow: 0 0 transparent;
+  }
+  
+  .digit:hover {
+    cursor: pointer;
+  }
+  
+  .digit:focus {
+    outline: 0;
+  }
+
+  .oper:active {
+    top: 4px;
+    box-shadow: 0 0 transparent;
+  }
+  
+  .oper:hover {
+    cursor: pointer;
+  }
+  
+  .oper:focus {
+    outline: 0;
+  }

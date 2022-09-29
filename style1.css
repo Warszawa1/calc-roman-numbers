@@ -1,0 +1,99 @@
+body { 
+    background: #fff;
+}
+
+/* make rows of 4 buttons*/
+.calculator-display {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.calculator-screen {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 1;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: right;
+    font-size: 2em;
+}
+
+.cube, .cube1 {
+position: relative;
+top: 10%;
+left: 5%;
+transform: translate(0%, 0%);
+width: 150px;
+height: 150px;
+background: #e593eb;
+z-index: 1;
+transition: all .25s ease;
+}
+
+.cube:active, .cube:focus, .cube1:active, .cube1:focus {
+margin-left: 10px;
+margin-top: px;
+}
+
+
+.bottom {
+width: 150px;
+height: 20px;
+background: #80558C;
+position: absolute;
+bottom: -20px;
+left: 10px;
+transform: skew(45deg);
+z-index: 1;
+}
+
+.bottom, .side {
+transition: all .25s ease;
+}
+
+.side {
+width: 150px;
+height: 20px;
+background: #AF7AB3;
+position: absolute;
+top: 0;
+right: 0;
+transform: rotate(-90deg) skew(-45deg);
+transform-origin: 150px 0;
+z-index: 1;
+}
+
+.cube:active .bottom,
+.cube:active .side {
+height: 10px;
+}
+
+.cube:active .bottom {
+bottom: -10px;
+left: 5px;
+}
+
+p, h5 {
+font-family: Arial Black, Arial, sans-serif;
+text-align: center;
+font-size: 45px;
+}
+
+a {
+color: white;
+text-align: center;
+}
+
+span {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #cc3333;
+    font-size: 45px;
+    display: none;
+}
+
+.cube:active p { display: none; }
+.cube:active span { display: block; }

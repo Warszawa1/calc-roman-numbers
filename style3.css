@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
+
+@font-face{
+    font-family:'digital-clock-font';
+    src: url('https://cdn.glitch.global/bca4dabe-80d5-4598-bcc7-f24e0130fc72/digital-7%20_mono.ttf?v=1662743526588');
+}
+
+body {
+    padding: 0;
+    /* text-align: center;
+    /* font-size: 22px;
+    font-family: sans-serif; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+    background-color: rgb(127, 170, 220);
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 680px;
+    width: 490px;
+    border-radius: 20px 20px 70px 70px;
+    background-color: #252932;
+    box-shadow: #050507 4px 6px 8px 6px;
+}
+
+.calculator {
+    border-radius: 10px;
+    width: 93%;
+    height: 95px;
+    background-color: #090910;
+    padding: 15px 20px 10px;
+    margin: 20px 0;
+}
+
+.displayScreen{
+    background: #687;
+    color: #100A09;
+    font-family: 'digital-clock-font', sans-serif;
+    text-align: right;
+    padding: 0.6em 1em 0.1em 0.6em;
+    border-radius: 0.3em;
+    box-shadow:
+    inset 2px 3px 4px #111,
+    inset -1px -1px 2px #111;
+    width: 94%;
+    height: 68px;
+    margin-bottom: 3rem;
+}
+
+.currentDisplay{
+    display: flex;
+    line-height: 43px;
+    justify-content: flex-end;
+    align-items: right;
+    font-size: 4em;
+}
+
+.currentDisplay:empty:not(:focus):before {
+    content: attr(data-text);
+}
+
+
+.buttons {
+    display: flex;
+    color: black;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+
+.clear{
+    background-color: rgb(185, 7, 7);
+    margin: 4px 8px 4px 0px;
+    box-shadow: 1.5px 3.5px 1px 1px rgb(135, 7, 7);
+}
+.clear:hover{
+    box-shadow: 1.5px 3.5px 1px 1px rgb(135, 7, 7);
+}
+.clear:active{
+    box-shadow: none;
+}
+
+
+
+.backspace {
+    margin: 4px 8px 4px 0px;
+    background-image: url('images/back-space.png');
+    background-size: 58%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.roman {
+    margin: 4px 8px 4px 0px;
+    background-image: url('images/roman-helmet.png');
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.lightOn {
+    margin: 4px 8px 4px 0px;
+    background-image: url('images/bulb.png');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+#calc_solar_cell {
+    display: flex;;
+    background-color: #26201C;
+    background: repeating-linear-gradient(
+    to left,
+    #111,
+    #111 2px,
+    #3d322b 2px,
+    #43372f 47.5px
+    );
+    width: 280px;
+    padding: 0.75em;
+    margin: 0.6em 1em 0.6em 1em;
+    border-radius: 0.25em 0.25em 0.25em 0.25em;
+    box-shadow:
+    inset 2px 3px 4px #111,
+    inset -1.5px -1.5px 2.5px #111;
+}
+
+#name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0 5px -18px;
+    padding: 0 0 0 0;
+    width: 100%;
+    height: 80%;
+    font-size: 1.1em;
+    font-family: 'roboto', sans-serif;
+    color: #f8f8f2;
+}
+
+.material-symbols-outlined {
+    align-items: left;
+    margin-top: 15px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 500,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+.wrapper { display: flex; }
+.block { width: 50%; }
+
+.block, #time {
+    display: flex;
+    height: 30px;
+    width: 100px;
+    flex-direction: column;
+    margin-top: 13px;
+    margin-left: -40px;
+    margin-bottom: 35px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1.75em;
+    color: #161614;
+}
+
+.block, #date {
+    display: flex;
+    height: 30px;
+    width: 100px;
+    flex-direction: column;
+    margin-top: 13px;
+    margin-left: 267px;
+    margin-bottom: 35px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1.75em;
+    color: #161614;
+}
+
+button {
+    background-color: #7e90a0;
+    color: black;
+    font-size: 40px;
+    width: 80px;
+    height: 85px;
+    border: none;
+    margin: 4px;
+    border-radius: 0.25em 0.25em 0.40em 0.40em;
+    box-shadow: 1.5px 3.5px 1px #5b5b67;
+	text-decoration: none;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 2.2em;
+}
+
+button:hover {
+    box-shadow: 1px 3.5px 1px #5b5b67;
+}
+
+button:active {
+    transform: translateY(3px);
+    box-shadow: none;
+}
+
+
+footer {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}

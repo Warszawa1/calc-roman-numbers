@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        
+        </style>
+    <title>Roman Calculator</title>
+</head>
+<body>
+    <header></header>
+<div class="wrapper">   
+    <div class="block" id="time"></div>
+    <div class="block" id="date"></div>
+</div>
+    <!-- <span class="material-symbols-outlined">
+                solar_power
+                </span> -->
+    <br/>
+
+    <div class="container">
+        <div class="wrapper">
+            <div class="block" id="calc_solar_cell">&nbsp;</div>
+            <div class="name" id="name">Roman-Arabic Calculator</div>
+        
+        </div>
+        
+        <div class="calculator">
+            <div class="displayScreen" id="light">
+                <div contentEditable=true data-text="Enter text here"></div>
+                <div class="currentDisplay"  data-text="0"></div>
+            </div>
+            <div class="buttons">
+                <div class="mathematicalButtons">
+                    <button class="num seven">7</button>
+                    <button class="num eight">8</button>
+                    <button class="num nine">9</button>
+                    <button class="operator divide">÷</button>
+                    <button class="num four">4</button>
+                    <button class="num five">5</button>
+                    <button class="num six">6</button>
+                    <button class="operator multiply">×</button>
+                    <button class="num one">1</button>
+                    <button class="num two">2</button>
+                    <button class="num three">3</button>
+                    <button class="operator subtract">-</button>
+                    <button class="num zero">0</button>
+                    <button class="decimal">.</button>
+                    <button class="equal">=</button>
+                    <button class="operator add">+</button>
+                </div>
+                <div class="editorButtons">
+                    <button class="roman"></button>
+                    <button class="clear">C</button>
+                    <button class="backspace"></button>
+                    <button onclick="switchOnLight()" class="lightOn"></button>
+                    <!-- <div class="ghost"><img src="./images/ghost_gif.gif" width="92"></div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
