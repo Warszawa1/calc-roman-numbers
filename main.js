@@ -224,7 +224,7 @@ function displayCharacter(e) {
 }
 
 function divisionByZeroError() {
-    currDisplay.textContent = "B R U H"
+    currDisplay.textContent = "ERROR"
     setTimeout(function() {clearAll()}, 3000)
 }
 
